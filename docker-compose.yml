@@ -1,0 +1,14 @@
+version: '3.2'
+
+services:
+  ibbi-api:
+    build: ./ibbi-api
+    image: ibbi-api
+    ports:
+      - "3000:3000"
+
+  ibbi-client:
+    build: ./ibbi-client
+    image: ibbi-client
+    ports:
+      - "5173:5173"
